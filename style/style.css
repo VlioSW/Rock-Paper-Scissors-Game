@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+
+}
+
+.gameResult {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.choiceButton {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+button {
+    cursor: pointer;
+
+}
