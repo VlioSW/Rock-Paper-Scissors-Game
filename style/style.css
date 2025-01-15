@@ -8,11 +8,13 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #2d2727;
 }
 
 header {
-    border: 1px solid #1527d5;
-    border-radius: 10px;
+    border: 10px solid black;
+    border-radius: 20px;
+    color: #955021;
     padding: 40px;
     margin-top: 20px;
     justify-content: center;
@@ -26,12 +28,18 @@ h1 {
     padding-top: 2px;
 }
 
+h2 {
+    font-weight: bolder;
+    text-decoration: dashed;
+    justify-content: center;
+}
+
 .score {
     border: 3px solid black;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #1527d5;
+    background-color: #955021;
     color: #fff;
     padding: 15px;
     margin: 25px;
@@ -48,9 +56,19 @@ h1 {
 
 }
 
+.roundBox {
+    padding: 10px;
+    margin: 20px;
+    color: #955021;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
 #startButton {
-    border: 1px solid #3ac29f;
+    border: 1px solid #955021;
     border-radius: 20px;
+    margin: 10px;
+    width: 140px;
 }
 
 button {
@@ -60,18 +78,36 @@ button {
 
 .choiceButton {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 350px;
+    padding: 20px;
+    margin: 20px;
 }
 
-#rock {
+#rockImg {
     width: 80px;
 }
 
-#paper {
+.rockButton {
+    background-color: #955021;
+    box-shadow: 5px 5px 5px black;
+}
+
+#paperImg {
     width: 80px;
 }
 
-#scissors {
+.paperButton {
+    background-color: #955021;
+    box-shadow: 5px 5px 5px black;
+}
+
+#scissorsImg {
     width: 80px;
+}
+
+.scissorsButton {
+    background-color: #955021;
+    box-shadow: 5px 5px 5px black;
 }

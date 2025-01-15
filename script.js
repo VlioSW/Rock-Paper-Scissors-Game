@@ -73,6 +73,8 @@ function endGame() {
     } else if (computerScore === 5) {
         endElement.innerText = `Game Over! You lose! Score: ${computerScore} | ${humanScore}`;
     }
+
+    startButtonElement.disabled = false;
 }
 
 function startGame() {
@@ -81,6 +83,7 @@ function startGame() {
     currentRound = 1;
     humanScoreElement.innerText = humanScore;
     computerScoreElement.innerText = computerScore;
+    scoreElement.style.display = `block`;
     roundElement.innerText = currentRound;
     gameResult.innerText = '';
     endElement.innerText = '';
