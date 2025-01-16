@@ -45,15 +45,9 @@ h2 {
     margin: 25px;
 }
 
-.fullScore {
-    display: flex;
-    flex-direction: row;
-}
-
 #gameResult {
     display: flex;
     font-weight: bold;
-
 }
 
 .roundBox {
@@ -73,7 +67,6 @@ h2 {
 
 button {
     cursor: pointer;
-
 }
 
 .choiceButton {
