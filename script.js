@@ -81,6 +81,7 @@ function startGame() {
     humanScore = 0;
     computerScore = 0;
     currentRound = 1;
+
     humanScoreElement.innerText = humanScore;
     computerScoreElement.innerText = computerScore;
     scoreElement.style.display = `block`;
@@ -94,28 +95,34 @@ function startGame() {
 
     startButtonElement.disabled = true;
 
+    rockButtonElement.removeEventListener("click", playRock);
+    paperButtonElement.removeEventListener("click", playPaper);
+    scissorsButtonElement.removeEventListener("click", playScissors);
 
-    rockButtonElement.addEventListener("click", function() {
-        const humanSelection = "rock";
-        const computerSelection = getComputerChoice();
-        playRound(computerSelection, humanSelection);
-        currentRound++;
-    });
-    
-    paperButtonElement.addEventListener("click", function() {
-        const humanSelection = "paper";
-        const computerSelection = getComputerChoice();
-        playRound(computerSelection, humanSelection);
-        currentRound++;
-    });
-    
-    scissorsButtonElement.addEventListener("click", function() {
-        const humanSelection = "scissors";
-        const computerSelection = getComputerChoice();
-        playRound(computerSelection, humanSelection);
-        currentRound++;
-    });
-    
+    rockButtonElement.addEventListener("click", playRock);
+    paperButtonElement.addEventListener("click", playPaper);
+    scissorsButtonElement.addEventListener("click", playScissors);
+}
+
+function playRock() {
+    const humanSelection = "rock";
+    const computerSelection = getComputerChoice();
+    playRound(computerSelection, humanSelection);
+    currentRound++;
+}
+
+function playPaper() {
+    const humanSelection = "paper";
+    const computerSelection = getComputerChoice();
+    playRound(computerSelection, humanSelection);
+    currentRound++;
+}
+
+function playScissors() {
+    const humanSelection = "scissors";
+    const computerSelection = getComputerChoice();
+    playRound(computerSelection, humanSelection);
+    currentRound++;
 }
 
 startButtonElement.addEventListener("click", function() {
